@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { ButtonModule } from 'primeng/button';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,

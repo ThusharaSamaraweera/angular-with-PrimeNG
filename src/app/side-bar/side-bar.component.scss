@@ -1,0 +1,39 @@
+.side-bar{
+  padding: 5px 0px 15px 5px;
+  width: 250px;
+  // height: '100vh';
+  // background-color: red;
+  border-right: 1px rgb(189, 188, 188) solid;
+
+  .top-title {
+    width: 100%;
+    border-bottom: 1px gray solid;
+
+    h5{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 1.2em;
+
+      .booster-label {
+        font-weight: 700 !important;
+      }
+
+    }
+  }
+
+  .filter-section{
+    height: 50px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    
+    .p-button-outlined{
+      padding: 2px 10px;
+
+    }
+
+    .p-button-text {
+      padding: 2px 10px;
+    }
+  }
+}
