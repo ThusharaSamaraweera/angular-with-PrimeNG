@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Sender } from '../customer-message-list/Sender';
 
 @Component({
   selector: 'app-customer-message',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerMessageComponent implements OnInit {
   title: string = 'Jk';
-  name: string = 'Wade Johnson';
-  lastMessage: string = 'Thank you';
+  @Input() sender!: Sender;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.title = this.sender.senderName.split(" ").map((n) => n[0].toUpperCase()).join("")
+  }
 }

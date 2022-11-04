@@ -20,5 +20,7 @@
       ></button>
     </div>
 
-    <app-customer-message></app-customer-message>
+    <ng-container *ngFor="let sender of listOfSenders">
+      <app-customer-message [sender]="sender"></app-customer-message>
+    </ng-container>
   </div>
