@@ -1,17 +1,19 @@
 $border-color: #e1e1e1;
 
-.side-bar{
+.side-bar {
   padding: 5px 0px 15px 5px;
   width: 250px;
-  // height: '100vh';
-  // background-color: red;
+  height: 100vh;
   border-right: 1px $border-color solid;
 
   .top-title {
     width: 100%;
     border-bottom: 1px $border-color solid;
+    height: 50px;
+    display: flex;
+    align-items: center;
 
-    h5{
+    h5 {
       margin-top: 0;
       margin-bottom: 0;
       font-size: 1.2em;
@@ -19,9 +21,6 @@ $border-color: #e1e1e1;
       .booster-label {
         font-weight: 700 !important;
       }
-
     }
   }
-
-
 }

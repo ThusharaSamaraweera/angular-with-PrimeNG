@@ -1,6 +1,10 @@
+$border-color: #e1e1e1;
+
 .customer-message {
   padding: 5px;
   display: flex;
+  height: 50px;
+    border-bottom: 1px $border-color solid;
 
   .customer-message-logo {
 
@@ -27,17 +31,17 @@
   }
 
   .content{
-    padding: 0px 6px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
 
     .main-label{
       color: blue;
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
 
     .last-message{
-      font-size: 0.5em;
+      font-size: 0.7em;
     }
   }
 }

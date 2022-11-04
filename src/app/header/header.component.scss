@@ -1,0 +1,26 @@
+.header {
+  padding: 15px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .search-input {
+    input {
+      padding: 7px 36px;
+      width: 400px;
+    }
+
+    i {
+      margin-top: -12px;
+    }
+  }
+
+  .top-panel{
+    p-dropdown {
+      background-color: red;
+      .p-dropdown {
+        height: 40px;
+      }
+    }
+  }
+}
