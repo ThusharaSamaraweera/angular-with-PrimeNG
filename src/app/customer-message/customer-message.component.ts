@@ -3,14 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-customer-message',
   templateUrl: './customer-message.component.html',
-  styleUrls: ['./customer-message.component.scss']
+  styleUrls: ['./customer-message.component.scss'],
 })
 export class CustomerMessageComponent implements OnInit {
-  title: string = "Jk"
-  
-  constructor() { }
+  title: string = 'Jk';
+  name: string = 'Wade Johnson';
+  lastMessage: string = 'Thank you';
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }

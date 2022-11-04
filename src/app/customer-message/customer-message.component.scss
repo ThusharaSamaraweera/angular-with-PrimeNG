@@ -1,12 +1,8 @@
 .customer-message {
   padding: 5px;
+  display: flex;
 
   .customer-message-logo {
-    .p-button-rounded {
-      padding: 6px 9px;
-      border-radius: 50%;
-      font-weight: 500 !important;
-    }
 
     .dot {
       width: 0.6rem;
@@ -20,9 +16,28 @@
       font-size: 0.7rem;
       font-weight: 700;
       text-align: center;
-      margin-top: 26px;
+      margin-top: 22px;
       margin-left: -9px;
       z-index: 2;
+    }
+
+    .avatar {
+      color: blue;
+    }
+  }
+
+  .content{
+    padding: 0px 6px;
+    display: flex;
+    flex-direction: column;
+
+    .main-label{
+      color: blue;
+      font-size: 0.7em;
+    }
+
+    .last-message{
+      font-size: 0.5em;
     }
   }
 }

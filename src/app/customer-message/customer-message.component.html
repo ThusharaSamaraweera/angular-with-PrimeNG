@@ -1,14 +1,16 @@
 <div class="customer-message">
   <div class="customer-message-logo">
-    <button
-      pButton
-      type="button"
-      class="p-button-raised p-button-rounded p-button-outlined "
-    >
-      {{ title }}
-    </button>
-    <span class="dot">
+    <p-avatar
+    styleClass="mr-2"
+    [style]="{ 'background-color': '#c2c2e9', color: 'blue' }"
+    shape="circle"
+    class="avatar"
+    >{{title}}</p-avatar>
+    <span class="dot"> </span>
+  </div>
 
-    </span>
+  <div class="content">
+    <label class="main-label">{{ name }}</label>
+    <label class="last-message">{{lastMessage}}</label>
   </div>
 </div>
