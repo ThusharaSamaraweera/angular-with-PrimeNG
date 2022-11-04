@@ -1,7 +1,7 @@
 $border-color: #e1e1e1;
 
 .side-bar {
-  padding: 5px 0px 15px 5px;
+  padding: 0px 0px 0px 5px;
   width: 250px;
   height: 100vh;
   border-right: 1px $border-color solid;
@@ -9,7 +9,7 @@ $border-color: #e1e1e1;
   .top-title {
     width: 100%;
     border-bottom: 1px $border-color solid;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
 

@@ -22,7 +22,8 @@ export class HeaderComponent implements OnInit {
     },
   ];
   dropdownValue = this.dropdownOptions[0].name;
-
+  title: string = "JK"
+  
   constructor() {}
 
   ngOnInit(): void {}
