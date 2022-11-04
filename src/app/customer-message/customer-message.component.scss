@@ -1,0 +1,28 @@
+.customer-message {
+  padding: 5px;
+
+  .customer-message-logo {
+    .p-button-rounded {
+      padding: 6px 9px;
+      border-radius: 50%;
+      font-weight: 500 !important;
+    }
+
+    .dot {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background-color: purple;
+      position: absolute;
+      color: #fff;
+      padding-top: 0.3em;
+      box-shadow: 0 1px 1px 1px #757575;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 26px;
+      margin-left: -9px;
+      z-index: 2;
+    }
+  }
+}

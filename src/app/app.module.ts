@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 
 import { ButtonModule } from 'primeng/button';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { CustomerListComponent } from './customer-message-list/customer-message-list.component';
+import { CustomerMessageComponent } from './customer-message/customer-message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideBarComponent
+    SideBarComponent,
+    CustomerListComponent,
+    CustomerMessageComponent
   ],
   imports: [
     BrowserModule,
