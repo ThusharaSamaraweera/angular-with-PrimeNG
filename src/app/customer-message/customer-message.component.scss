@@ -4,10 +4,9 @@ $border-color: #e1e1e1;
   padding: 5px;
   display: flex;
   height: 50px;
-    border-bottom: 1px $border-color solid;
+  border-bottom: 1px $border-color solid;
 
   .customer-message-logo {
-
     .dot {
       width: 0.6rem;
       height: 0.6rem;
@@ -30,17 +29,17 @@ $border-color: #e1e1e1;
     }
   }
 
-  .content{
+  .content {
     padding: 0px 10px;
     display: flex;
     flex-direction: column;
 
-    .main-label{
+    .main-label {
       color: blue;
       font-size: 0.9em;
     }
 
-    .last-message{
+    .last-message {
       font-size: 0.7em;
     }
   }

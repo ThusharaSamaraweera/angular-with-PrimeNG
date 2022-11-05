@@ -12,7 +12,12 @@
   </div>
 
   <div class="general-messages-section">
-    <label>General Messages</label>
-    <i class="pi pi-bell"></i>
+    <div class="general-message-header">
+      <label>General Messages</label>
+      <i class="pi pi-bell"></i>
+    </div>
+    <ng-container *ngFor="let message of repairPartMessages">
+      <app-repair-part></app-repair-part>
+    </ng-container>
   </div>
 </div>

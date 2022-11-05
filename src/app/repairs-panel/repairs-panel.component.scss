@@ -1,30 +1,37 @@
 @import "../../assets/global-variables.scss";
 
-.repairs-panel{
+.repairs-panel {
   display: flex;
   flex-direction: column;
   width: 100%;
 
-  .repairs-panel-filter-section{
+  .repairs-panel-filter-section {
     display: flex;
     border-bottom: 1px $border-color solid;
-    .repairs-panel-filter-section-label{
+    .repairs-panel-filter-section-label {
       font-weight: 700 !important;
       padding-top: 12px;
     }
   }
 
-  .general-messages-section{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px $border-color solid;
+  .general-messages-section {
+    .general-message-header {
+      border-bottom: 1px $border-color solid;
+      display: flex;
+      justify-content: space-between;
+      
+      .pi-bell {
+        border: 1px $border-color solid;
+        color: gray;
+        padding: 4px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+    }
 
-    .pi-bell{
-      border: 1px $border-color solid;
-      color: gray;
-      padding: 4px;
-      border-radius: 50%;
-      margin: 5px;
+    .repair-part-message-list {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

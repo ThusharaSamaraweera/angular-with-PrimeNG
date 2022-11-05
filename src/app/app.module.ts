@@ -17,6 +17,7 @@ import { CustomerMessageComponent } from './customer-message/customer-message.co
 import { HeaderComponent } from './header/header.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 import { RepairsPanelComponent } from './repairs-panel/repairs-panel.component';
+import { RepairPartComponent } from './repair-part/repair-part.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { RepairsPanelComponent } from './repairs-panel/repairs-panel.component';
     HeaderComponent,
     MainPanelComponent,
     RepairsPanelComponent,
+    RepairPartComponent,
   ],
   imports: [
     BrowserModule,
