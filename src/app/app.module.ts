@@ -18,6 +18,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 import { RepairsPanelComponent } from './repairs-panel/repairs-panel.component';
 import { RepairPartComponent } from './repair-part/repair-part.component';
+import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { RepairPartComponent } from './repair-part/repair-part.component';
     MainPanelComponent,
     RepairsPanelComponent,
     RepairPartComponent,
+    CustomerDetailsComponent,
   ],
   imports: [
     BrowserModule,
