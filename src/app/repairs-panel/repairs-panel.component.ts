@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class RepairsPanelComponent implements OnInit {
   repairPartMessages = [
     {
-      partName: '2005 Ford Freestyle 1',
+      repairPartName: '2005 Ford Freestyle 1',
     },
     {
-      partName: '2005 Ford Freestyle 2',
+      repairPartName: '2005 Ford Freestyle 2',
     },
   ];
 

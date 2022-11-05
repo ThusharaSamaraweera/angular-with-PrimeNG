@@ -16,8 +16,8 @@
       <label>General Messages</label>
       <i class="pi pi-bell"></i>
     </div>
-    <ng-container *ngFor="let message of repairPartMessages">
-      <app-repair-part></app-repair-part>
+    <ng-container *ngFor="let repair of repairPartMessages">
+      <app-repair-part [repair]="repair"></app-repair-part>
     </ng-container>
   </div>
 </div>
