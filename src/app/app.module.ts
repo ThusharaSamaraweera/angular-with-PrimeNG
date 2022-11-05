@@ -9,11 +9,14 @@ import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
 import { ScrollingModule } from '@angular/cdk/scrolling'
+import { BadgeModule } from 'primeng/badge';
 
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CustomerListComponent } from './customer-message-list/customer-message-list.component';
 import { CustomerMessageComponent } from './customer-message/customer-message.component';
 import { HeaderComponent } from './header/header.component';
+import { MainPanelComponent } from './main-panel/main-panel.component';
+import { RepairsPanelComponent } from './repairs-panel/repairs-panel.component';
 
 @NgModule({
   declarations: [
@@ -22,17 +25,20 @@ import { HeaderComponent } from './header/header.component';
     CustomerListComponent,
     CustomerMessageComponent,
     HeaderComponent,
+    MainPanelComponent,
+    RepairsPanelComponent,
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    AvatarModule,
-    ScrollingModule,
     FormsModule,
     BrowserAnimationsModule,
-    
+
+    ScrollingModule,
+    ButtonModule,
+    AvatarModule,
     InputTextModule,
     DropdownModule,
+    BadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
