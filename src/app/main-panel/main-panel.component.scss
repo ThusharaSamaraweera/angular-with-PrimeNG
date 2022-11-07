@@ -1,8 +1,14 @@
 @import "../../assets/global-variables.scss";
 
 .main-panel {
+  display: flex;
   .main-panel-side-bar {
     width: 300px;
     border-right: 1px solid $border-color;
   }
+
+  .messaging-section{
+    width: 100%;
+  }
+
 }

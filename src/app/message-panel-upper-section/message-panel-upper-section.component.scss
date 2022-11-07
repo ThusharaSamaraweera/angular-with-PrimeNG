@@ -1,0 +1,38 @@
+.messaging-section {
+  font-size: 0.8em;
+
+  .header-section {
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+
+    .header-box {
+      margin: 5px;
+      label {
+        color: gray;
+      }
+      .roNo-value {
+        font-weight: 600 !important;
+        color: black;
+      }
+
+      ::ng-deep .dropdown {
+        border: 0;
+
+        ::ng-deep .p-dropdown-label {
+          padding: 4px 8px;
+          display: flex;
+          color: black;
+          font-size: 0.8em;
+        }
+
+        ::ng-deep .p-dropdown-item {
+          font-weight: 600 !important;
+          padding: 4px 8px;
+          display: flex;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

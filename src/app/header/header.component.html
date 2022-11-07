@@ -15,15 +15,29 @@
       [options]="dropdownOptions"
       [(ngModel)]="dropdownValue"
       [editable]="true"
-      optionLabel="name"
-      optionValue="code"
-    ></p-dropdown>
+      optionLabel="label"
+      optionValue="value"
+      styleClass="dropdown"
+    >
+        <ng-template let-group pTemplate="item" class="option">
+        <div class="p-d-flex p-ai-center">
+          <!-- <p-badge styleClass="badge"></p-badge> -->
+          <span>{{ group.label }}</span>
+        </div>
+      </ng-template>
+      <ng-template let-group pTemplate="selectedItem">
+        <div class="p-d-flex p-ai-center">
+          <!-- <p-badge styleClass="badge"></p-badge> -->
+          <span>{{ group.label }}</span>
+        </div>
+      </ng-template>
+  </p-dropdown>
 
     <div class="avatar-box">
       <p-avatar
         [style]="{ 'background-color': '#c2c2e9', color: 'blue' }"
         shape="circle"
-        size="large"
+        size="medium"
         class="avatar"
         >{{ title }}</p-avatar
       >
