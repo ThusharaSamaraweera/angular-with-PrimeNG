@@ -5,14 +5,70 @@
   </div>
 
   <div class="customer-details-content">
-      <p-avatar
-        shape="circle"
-        size="large"
-        styleClass="avatar"
-        >{{ title }}</p-avatar
-      >
+    <p-avatar shape="circle" size="medium" styleClass="avatar">{{
+      title
+    }}</p-avatar>
+    <div class="details-box">
       <div>
-        <label></label>
+        <label class="details-label">Name</label>
       </div>
+      <div>
+        <label class="details-value">{{ name }}</label>
+      </div>
+    </div>
+
+    <div class="details-box">
+      <div>
+        <label class="details-label">Email</label>
+      </div>
+      <div>
+        <label class="details-value">{{ email }}</label>
+      </div>
+    </div>
+
+    <div class="details-box">
+      <div>
+        <label class="details-label">contact Number</label>
+      </div>
+      <div class="contact">
+        <i class="pi pi-phone"></i>
+        <label class="details-value">{{ contactNumber }}</label>
+      </div>
+    </div>
+
+    <div class="details-box">
+      <div>
+        <label class="details-label">Address</label>
+      </div>
+      <div>
+        <label class="details-value">{{ address }}</label>
+      </div>
+    </div>
+
+    <div class="details-box customer-status">
+      <div>
+        <label class="details-label">Customer Status</label>
+      </div>
+      <p-dropdown
+        [options]="customerStatusOptions"
+        [(ngModel)]="customerStatus"
+        optionLabel="label"
+        optionValue="value"
+        styleClass="dropdown"
+      >
+        <ng-template let-group pTemplate="item" class="option">
+          <div class="p-d-flex p-ai-center">
+            <!-- <p-badge styleClass="badge"></p-badge> -->
+            <span>{{ group.label }}</span>
+          </div>
+        </ng-template>
+        <ng-template let-group pTemplate="selectedItem">
+          <div class="p-d-flex p-ai-center">
+            <!-- <p-badge styleClass="badge"></p-badge> -->
+            <span>{{ group.label }}</span>
+          </div>
+        </ng-template>
+      </p-dropdown>
+    </div>
   </div>
 </div>

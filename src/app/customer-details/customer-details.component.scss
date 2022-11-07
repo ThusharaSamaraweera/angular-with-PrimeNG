@@ -1,6 +1,7 @@
 @import "../../assets/global-variables.scss";
 
 .customer-details {
+  font-size: 0.8em;
   .customer-details-header {
     display: flex;
     justify-content: space-between;
@@ -12,11 +13,48 @@
     }
   }
 
-  .customer-details-content{
-    ::ng-deep .avatar{
+  .customer-details-content {
+    ::ng-deep .avatar {
       background-color: #c2c2e9;
       color: blue;
-      margin: 15px 10px;
+      margin: 10px;
+    }
+
+    .details-box {
+      margin-top: 8px;
+      margin-bottom: 8px;
+
+      .details-label {
+        color: gray;
+      }
+
+      .details-value {
+        font-weight: 500;
+      }
+
+      .contact {
+        margin-left: 10px;
+      }
+    }
+    .customer-status {
+      ::ng-deep .dropdown {
+        border: 0;
+        margin: 5px;
+
+        ::ng-deep .p-dropdown-label {
+          padding: 4px 8px;
+          display: flex;
+          color: dodgerblue;
+          font-size: 0.8em;
+        }
+
+        ::ng-deep .p-dropdown-item {
+          padding: 4px 8px;
+          display: flex;
+          color: dodgerblue;
+          font-size: 0.8em;
+        }
+      }
     }
   }
 }
