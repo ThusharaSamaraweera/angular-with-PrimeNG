@@ -3,35 +3,50 @@
 
   .header-section {
     display: flex;
+    justify-content: space-between;
     padding-top: 10px;
     width: 100%;
 
-    .header-box {
-      margin: 5px;
-      label {
-        color: gray;
-      }
-      .roNo-value {
-        font-weight: 600 !important;
-        color: black;
-      }
+    .header-section-left{
+    display: flex;
 
-      ::ng-deep .dropdown {
-        border: 0;
-
-        ::ng-deep .p-dropdown-label {
-          padding: 4px 8px;
-          display: flex;
-          color: black;
-          font-size: 0.8em;
+      .header-box {
+        margin: 5px 0px;
+        label {
+          color: gray;
         }
-
-        ::ng-deep .p-dropdown-item {
+        .roNo-value {
           font-weight: 600 !important;
-          padding: 4px 8px;
-          display: flex;
-          font-size: 0.8em;
+          color: black;
         }
+
+        ::ng-deep .dropdown {
+          border: 0;
+
+          ::ng-deep .p-dropdown-label {
+            padding: 4px 8px;
+            display: flex;
+            color: black;
+            font-size: 0.8em;
+          }
+
+          ::ng-deep .p-dropdown-item {
+            font-weight: 600 !important;
+            padding: 4px 8px;
+            display: flex;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+    .header-section-right{
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+
+      ::ng-deep .badge {
+        background-color: slateblue;
       }
     }
   }

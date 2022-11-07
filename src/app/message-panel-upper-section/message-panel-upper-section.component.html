@@ -1,57 +1,85 @@
 <div class="messaging-section">
   <div class="header-section">
-    <div class="header-box">
-      <div>
-        <label
-          >RO No: <span class="roNo-value">{{ roNo }}</span></label
-        >
+    <div class="header-section-left">
+      <div class="header-box">
+        <div>
+          <label
+            >RO No: <span class="roNo-value">{{ roNo }}</span></label
+          >
+        </div>
+        <div>
+          <label>VIN: {{ vin }} </label>
+        </div>
       </div>
       <div>
-        <label>VIN: {{ vin }} </label>
+        <p-divider layout="vertical"></p-divider>
       </div>
-    </div>
-    <div>
-      <p-divider layout="vertical"></p-divider>
-    </div>
-    <div class="header-box">
+      <div class="header-box">
+        <div>
+          <label
+            >RO No: <span>{{ insurer }}</span></label
+          >
+        </div>
+        <div>
+          <label>VIN: {{ claimNo }} </label>
+        </div>
+      </div>
       <div>
-        <label
-          >RO No: <span>{{ insurer }}</span></label
-        >
+        <p-divider
+          layout="vertical"
+          styleClass="header-box-divider"
+        ></p-divider>
       </div>
-      <div>
-        <label>VIN: {{ claimNo }} </label>
+
+      <div class="header-box">
+        <div>
+          <label>Assigned User/Team</label>
+        </div>
+        <div>
+          <p-dropdown
+            [options]="dropdownAssignedUserOrTeam"
+            [(ngModel)]="assignedUserOrTeam"
+            optionLabel="label"
+            optionValue="value"
+            styleClass="dropdown"
+          >
+            <ng-template let-group pTemplate="item" class="option">
+              <div class="p-d-flex p-ai-center">
+                <!-- <p-badge styleClass="badge"></p-badge> -->
+                <span>{{ group.label }}</span>
+              </div>
+            </ng-template>
+            <ng-template let-group pTemplate="selectedItem">
+              <div class="p-d-flex p-ai-center">
+                <!-- <p-badge styleClass="badge"></p-badge> -->
+                <span>{{ group.label }}</span>
+              </div>
+            </ng-template>
+          </p-dropdown>
+        </div>
       </div>
-    </div>
-    <div>
-      <p-divider layout="vertical"></p-divider>
     </div>
 
-    <div class="header-box">
+    <div class="header-section-right">
       <div>
-        <label>Assigned User/Team</label>
+        <button
+          pButton
+          type="button"
+          icon="pi pi-pencil"
+          iconPos="left"
+          label="Edit"
+          class="p-button-text"
+        ></button>
       </div>
+
       <div>
-        <p-dropdown
-          [options]="dropdownAssignedUserOrTeam"
-          [(ngModel)]="assignedUserOrTeam"
-          optionLabel="label"
-          optionValue="value"
-          styleClass="dropdown"
-        >
-          <ng-template let-group pTemplate="item" class="option">
-            <div class="p-d-flex p-ai-center">
-              <!-- <p-badge styleClass="badge"></p-badge> -->
-              <span>{{ group.label }}</span>
-            </div>
-          </ng-template>
-          <ng-template let-group pTemplate="selectedItem">
-            <div class="p-d-flex p-ai-center">
-              <!-- <p-badge styleClass="badge"></p-badge> -->
-              <span>{{ group.label }}</span>
-            </div>
-          </ng-template>
-        </p-dropdown>
+        <label>Media</label>
+        <p-badge value="10" styleClass="badge"></p-badge>
+      </div>
+
+      <div>
+        <label>Estimates</label>
+        <p-badge value="2" styleClass="badge"></p-badge>
       </div>
     </div>
   </div>
