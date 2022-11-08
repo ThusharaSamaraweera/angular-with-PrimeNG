@@ -11,6 +11,8 @@ import { DropdownModule } from 'primeng/dropdown';
 import { ScrollingModule } from '@angular/cdk/scrolling'
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
+import { CardModule } from 'primeng/card';
+import { SplitButtonModule } from 'primeng/splitbutton';
 
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CustomerListComponent } from './customer-message-list/customer-message-list.component';
@@ -21,6 +23,7 @@ import { RepairsPanelComponent } from './repairs-panel/repairs-panel.component';
 import { RepairPartComponent } from './repair-part/repair-part.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { MessagePanelUpperSectionComponent } from './message-panel-upper-section/message-panel-upper-section.component';
+import { MessageTypingSectionComponent } from './message-typing-section/message-typing-section.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,7 @@ import { MessagePanelUpperSectionComponent } from './message-panel-upper-section
     RepairPartComponent,
     CustomerDetailsComponent,
     MessagePanelUpperSectionComponent,
+    MessageTypingSectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,9 @@ import { MessagePanelUpperSectionComponent } from './message-panel-upper-section
     InputTextModule,
     DropdownModule,
     BadgeModule,
-    DividerModule
+    DividerModule,
+    CardModule,
+    SplitButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

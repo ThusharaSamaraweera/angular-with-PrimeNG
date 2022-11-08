@@ -1,0 +1,35 @@
+<div class="message-typing-section">
+  <div class="number-selecting-dropdown">
+    <label>Text message to</label>
+    <p-dropdown
+      [options]="numberOptions"
+      [(ngModel)]="selectedNumber"
+      [editable]="true"
+      optionLabel="label"
+      optionValue="value"
+      styleClass="dropdown"
+    >
+      <ng-template let-group pTemplate="item" class="option">
+        <div class="p-d-flex p-ai-center">
+          <!-- <p-badge styleClass="badge"></p-badge> -->
+          <span>{{ group.label }}</span>
+        </div>
+      </ng-template>
+      <ng-template let-group pTemplate="selectedItem">
+        <div class="p-d-flex p-ai-center">
+          <!-- <p-badge styleClass="badge"></p-badge> -->
+          <span>{{ group.label }}</span>
+        </div>
+      </ng-template>
+    </p-dropdown>
+  </div>
+
+  <div class="typing-section">
+      <input type="text" pInputText />
+      <p-splitButton icon="pi pi-paperclip" [model]="options1" styleClass="p-button-text"></p-splitButton>
+      <p-divider layout="vertical" styleClass="divider"></p-divider>
+      <p-splitButton icon="pi pi-clock" [model]="options1" styleClass="p-button-text"></p-splitButton>
+      <p-divider layout="vertical" styleClass="divider"></p-divider>
+      <button pButton type="button" icon="pi pi-send" class="p-button-text"></button>
+  </div>
+</div>
