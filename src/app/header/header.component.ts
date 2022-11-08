@@ -9,21 +9,21 @@ export class HeaderComponent implements OnInit {
   searchingValue!: string;
   dropdownOptions = [
     {
-      name: 'Wrench Repair City East 1',
-      code: 'Wrench Repair City East 1',
+      label: 'Wrench Repair City East 1',
+      value: 'Wrench Repair City East 1',
     },
     {
-      name: 'Wrench Repair City East 2',
-      code: 'Wrench Repair City East 2',
+      label: 'Wrench Repair City East 2',
+      value: 'Wrench Repair City East 2',
     },
     {
-      name: 'Wrench Repair City East 3',
-      code: 'Wrench Repair City East 3',
+      label: 'Wrench Repair City East 3',
+      value: 'Wrench Repair City East 3',
     },
   ];
-  dropdownValue = this.dropdownOptions[0].name;
+  dropdownValue = this.dropdownOptions[0].value;
   title: string = "JK"
-  
+
   constructor() {}
 
   ngOnInit(): void {}

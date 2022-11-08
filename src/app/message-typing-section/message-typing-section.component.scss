@@ -1,0 +1,65 @@
+@import "../../assets/global-variables.scss";
+
+.message-typing-section {
+  font-size: 0.8em;
+
+  .number-selecting-dropdown {
+    ::ng-deep .dropdown {
+      border: 0;
+
+      ::ng-deep .p-dropdown-label {
+        padding: 4px 8px;
+        display: flex;
+        font-size: 0.8em;
+      }
+
+      ::ng-deep .p-dropdown-item {
+        padding: 4px 8px;
+        display: flex;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  .typing-section {
+    padding: 5px 0;
+    align-items: center;
+    display: flex;
+
+    .typing-input {
+      border: 1px $border-color solid;
+      border-radius: 5px;
+      display: flex;
+      height: 30px;
+      align-items: center;
+      padding: 5px 10px;
+
+      .p-inputtext {
+        border: 0;
+        width: 400px;
+        padding: 0px 10px 0px 10px;
+      }
+
+      ::ng-deep .divider {
+        height: 2px;
+        margin: 10px 0;
+      }
+
+      ::ng-deep button {
+        // background-color: red;
+        padding: 0px 0px 0px 0px;
+      }
+    }
+
+    .other-option-section {
+      margin-left: 10px;
+      display: flex;
+
+      ::ng-deep .p-button-outlined {
+        padding: 1px 1px;
+        margin: 0 5px;
+        width: 37px;
+      }
+    }
+  }
+}

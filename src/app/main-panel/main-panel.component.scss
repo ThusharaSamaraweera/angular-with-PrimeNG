@@ -1,8 +1,33 @@
 @import "../../assets/global-variables.scss";
 
 .main-panel {
+  display: flex;
+
   .main-panel-side-bar {
     width: 300px;
     border-right: 1px solid $border-color;
+  }
+
+  .main-content {
+    width: 100%;
+
+    .messaging-section {
+      background-color: rgb(238, 231, 231);
+        padding: 20px 0 0 20px;
+
+      ::ng-deep .messaging-card {
+      }
+
+      ::ng-deep .p-card {
+      }
+
+      ::ng-deep .p-card-body {
+        padding: 0;
+      }
+
+      ::ng-deep .p-card-content{
+        padding: 10px 0 10px 10px;
+      }
+    }
   }
 }

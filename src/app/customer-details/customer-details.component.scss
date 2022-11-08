@@ -34,6 +34,10 @@
 
       .contact {
         margin-left: 10px;
+
+        .details-value{
+          color: blue;
+        }
       }
     }
     .customer-status {
@@ -41,17 +45,23 @@
         border: 0;
         margin: 5px;
 
+
         ::ng-deep .p-dropdown-label {
+          ::ng-deep .badge {
+            background-color: red;
+            color: red;
+          }
           padding: 4px 8px;
           display: flex;
-          color: dodgerblue;
+          color: green;
+          font-weight: 600 !important;
           font-size: 0.8em;
         }
 
         ::ng-deep .p-dropdown-item {
           padding: 4px 8px;
           display: flex;
-          color: dodgerblue;
+          color: green;
           font-size: 0.8em;
         }
       }
