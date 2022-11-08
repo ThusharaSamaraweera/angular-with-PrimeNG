@@ -1,0 +1,46 @@
+$border-color: #e1e1e1;
+
+.customer-message {
+  padding: 5px;
+  display: flex;
+  height: 50px;
+  border-bottom: 1px $border-color solid;
+
+  .customer-message-logo {
+    .dot {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background-color: purple;
+      position: absolute;
+      color: #fff;
+      padding-top: 0.3em;
+      box-shadow: 0 1px 1px 1px #757575;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 22px;
+      margin-left: -9px;
+      z-index: 2;
+    }
+
+    .avatar {
+      color: blue;
+    }
+  }
+
+  .content {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+
+    .main-label {
+      color: blue;
+      font-size: 0.9em;
+    }
+
+    .last-message {
+      font-size: 0.7em;
+    }
+  }
+}

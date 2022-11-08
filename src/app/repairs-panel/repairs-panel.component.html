@@ -1,0 +1,23 @@
+<div class="repairs-panel">
+  <div class="repairs-panel-filter-section">
+    <label class="repairs-panel-filter-section-label">Repairs</label>
+    <button
+      pButton
+      type="button"
+      icon="pi pi-plus"
+      iconPos="left"
+      label="Add"
+      class="p-button-text"
+    ></button>
+  </div>
+
+  <div class="general-messages-section">
+    <div class="general-message-header">
+      <label>General Messages</label>
+      <i class="pi pi-bell"></i>
+    </div>
+    <ng-container *ngFor="let repair of repairPartMessages">
+      <app-repair-part [repair]="repair"></app-repair-part>
+    </ng-container>
+  </div>
+</div>

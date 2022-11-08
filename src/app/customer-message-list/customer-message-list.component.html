@@ -1,0 +1,26 @@
+  <div class="customer-message-list">
+
+    <div class="filter-section">
+      <button
+        pButton
+        pRipple
+        type="button"
+        class="p-button-outlined p-button-sm"
+      >
+        {{ appliedFilterCount }} Filter Applied
+      </button>
+
+      <button
+        pButton
+        type="button"
+        icon="pi pi-plus"
+        iconPos="left"
+        label="Add"
+        class="p-button-text"
+      ></button>
+    </div>
+
+    <ng-container *ngFor="let sender of listOfSenders">
+      <app-customer-message [sender]="sender"></app-customer-message>
+    </ng-container>
+  </div>

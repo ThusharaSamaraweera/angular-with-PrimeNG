@@ -1,0 +1,41 @@
+@import "../../assets/global-variables.scss";
+
+.repairs-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.8em;
+
+  .repairs-panel-filter-section {
+    display: flex;
+    border-bottom: 1px $border-color solid;
+    .repairs-panel-filter-section-label {
+      font-weight: 700 !important;
+      padding-top: 12px;
+    }
+  }
+
+  .general-messages-section {
+    border-bottom: 1px $border-color solid;
+
+    .general-message-header {
+      border-bottom: 1px $border-color solid;
+      display: flex;
+      justify-content: space-between;
+
+      .pi-bell {
+        border: 1px $border-color solid;
+        color: gray;
+        padding: 4px;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .repair-part-message-list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../assets/global-variables.scss";
+
+.repair-part {
+  display: flex;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    ::ng-deep .dropdown {
+      border: 0;
+
+      ::ng-deep .p-dropdown-label {
+        padding: 4px 8px;
+        display: flex;
+        color: dodgerblue;
+        font-size: 0.8em;
+      }
+
+      ::ng-deep .p-dropdown-item {
+        padding: 4px 8px;
+        display: flex;
+        color: dodgerblue;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  .bell {
+    display: flex;
+    align-items: flex-start;
+
+    .pi-bell {
+      border: 1px $border-color solid;
+      color: gray;
+      padding: 4px;
+      border-radius: 50%;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+}

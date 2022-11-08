@@ -1,0 +1,32 @@
+<div class="header">
+  <span class="p-float-label p-input-icon-left search-input">
+    <i class="pi pi-search"></i>
+    <input
+      type="text"
+      id="inputtext-left"
+      pInputText
+      [(ngModel)]="searchingValue"
+      placeholder="Search"
+    />
+  </span>
+
+  <div class="top-panel">
+    <p-dropdown
+      [options]="dropdownOptions"
+      [(ngModel)]="dropdownValue"
+      [editable]="true"
+      optionLabel="name"
+      optionValue="code"
+    ></p-dropdown>
+
+    <div class="avatar-box">
+      <p-avatar
+        [style]="{ 'background-color': '#c2c2e9', color: 'blue' }"
+        shape="circle"
+        size="large"
+        class="avatar"
+        >{{ title }}</p-avatar
+      >
+    </div>
+  </div>
+</div>
