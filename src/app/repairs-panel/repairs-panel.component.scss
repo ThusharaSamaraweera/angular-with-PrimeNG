@@ -9,6 +9,9 @@
   .repairs-panel-filter-section {
     display: flex;
     border-bottom: 1px $border-color solid;
+    justify-content: space-between;
+    align-content: center;
+    
     .repairs-panel-filter-section-label {
       font-weight: 700 !important;
       padding-top: 12px;

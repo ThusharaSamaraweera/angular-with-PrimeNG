@@ -24,6 +24,7 @@ import { RepairPartComponent } from './repair-part/repair-part.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { MessagePanelUpperSectionComponent } from './message-panel-upper-section/message-panel-upper-section.component';
 import { MessageTypingSectionComponent } from './message-typing-section/message-typing-section.component';
+import { MessageListComponent } from './message-list/message-list.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MessageTypingSectionComponent } from './message-typing-section/message-
     CustomerDetailsComponent,
     MessagePanelUpperSectionComponent,
     MessageTypingSectionComponent,
+    MessageListComponent,
   ],
   imports: [
     BrowserModule,
