@@ -21,30 +21,45 @@
     }
   }
 
-  .typing-section{
-    border: 1px $border-color solid;
-    display: flex;
-    align-items: center;
-    height: 40px;
+  .typing-section {
     padding: 5px 0;
-    
-    .p-inputtext{
-      border: 0;
-      // width: 400px;
-      padding: 5px 10px 5px 10px;
+    align-items: center;
+    display: flex;
+
+    .typing-input {
+      border: 1px $border-color solid;
+      border-radius: 5px;
+      display: flex;
+      height: 30px;
+      align-items: center;
+      padding: 5px 10px;
+
+      .p-inputtext {
+        border: 0;
+        width: 400px;
+        padding: 0px 10px 0px 10px;
+      }
+
+      ::ng-deep .divider {
+        height: 2px;
+        margin: 10px 0;
+      }
+
+      ::ng-deep button {
+        // background-color: red;
+        padding: 0px 0px 0px 0px;
+      }
     }
 
-    ::ng-deep .divider{
-      height:2px;
-      background-color: red;
-      margin: 10px 0;
+    .other-option-section {
+      margin-left: 10px;
+      display: flex;
+
+      ::ng-deep .p-button-outlined {
+        padding: 1px 1px;
+        margin: 0 5px;
+        width: 37px;
+      }
     }
-
-    ::ng-deep button{
-      // background-color: red;
-      padding: 5px 0px 5px 0px;
-
-    }
-
   }
 }
