@@ -1,5 +1,5 @@
 export interface MessageModel{
-  id: string,
+  id: number,
   content: string,
-  time: Date
+  time: string
 }

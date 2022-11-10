@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { AddMessage } from '../state/messages/message-actions';
+import { MessageModel } from '../state/messages/MessageModel';
 
 @Component({
   selector: 'app-message-typing-section',
@@ -20,12 +23,21 @@ export class MessageTypingSectionComponent implements OnInit {
       command: () => {},
     },
   ];
-  constructor() {}
+  constructor(private store: Store) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   onClickSendBtn() {
-    console.log(this.typingMessage)
-    this.typingMessage = ""
+    if (!this.typingMessage) {
+      return;
+    }
+
+    const newMessage: MessageModel = {
+      id: Math.round(Math.random() * 1000),
+      content: this.typingMessage,
+      time: new Date().toLocaleString(),
+    };
+    this.store.dispatch(new AddMessage(newMessage));
+    this.typingMessage = '';
   }
 }

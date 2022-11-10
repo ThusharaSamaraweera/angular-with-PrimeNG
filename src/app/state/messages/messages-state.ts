@@ -26,6 +26,5 @@ export class MessageState {
 
     const state = ctx.getState()
     ctx.setState({...state, messages: [...state.messages, message]})
-    console.log(ctx.getState())
   }
 }

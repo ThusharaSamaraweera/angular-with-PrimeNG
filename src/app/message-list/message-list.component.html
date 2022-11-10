@@ -1,12 +1,19 @@
 <div class="message-list-section">
   <div class="message-block">
-    <div class="messages" >
-      <div *ngFor="let message of messages" class="message">
-        {{message.content}}
+    <div class="messages">
+      <div *ngFor="let message of messages | async" class="message">
+        {{ message.content }}
       </div>
     </div>
-    <p-avatar shape="circle" size="medium" styleClass="avatar">{{
-      title
-    }}</p-avatar>
+    <p-avatar
+      shape="circle"
+      size="medium"
+      styleClass="avatar"
+      *ngIf="(messages | async) as messages; else emptyMessages"
+      >{{ title }}</p-avatar
+    >
+    <ng-template #emptyMessages>
+      <div>sdfs</div>
+    </ng-template>
   </div>
 </div>

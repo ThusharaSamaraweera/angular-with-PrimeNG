@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Select } from '@ngxs/store';
+import { Observable } from 'rxjs';
+import { MessageSelector } from '../state/messages/message-selectors';
 import { MessageModel } from '../state/messages/MessageModel';
 
 @Component({
@@ -8,10 +11,7 @@ import { MessageModel } from '../state/messages/MessageModel';
 })
 export class MessageListComponent implements OnInit {
   title: string = 'JK';
-  messages: MessageModel[] = [
-    { id: '1', content: 'message1', time: new Date() },
-    { id: '2', content: 'message2', time: new Date() },
-  ];
+  @Select(MessageSelector.messages) messages!: Observable<MessageModel[]>;
   constructor() {}
 
   ngOnInit(): void {}
