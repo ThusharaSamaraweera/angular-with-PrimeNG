@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-typing-section.component.scss'],
 })
 export class MessageTypingSectionComponent implements OnInit {
+  typingMessage!: string;
   numberOptions = [
     { label: '+1 234 343 2323', value: '+1 234 343 2323' },
     { label: '+1 234 343 2323', value: '+1 234 343 2323' },
@@ -21,5 +22,10 @@ export class MessageTypingSectionComponent implements OnInit {
   ];
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+
+  onClickSendBtn() {
+    console.log(this.typingMessage)
+    this.typingMessage = ""
+  }
 }

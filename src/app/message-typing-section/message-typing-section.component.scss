@@ -46,8 +46,10 @@
       }
 
       ::ng-deep button {
-        // background-color: red;
         padding: 0px 0px 0px 0px;
+        border: none;
+        outline: none !important;
+        box-shadow: none !important;
       }
     }
 

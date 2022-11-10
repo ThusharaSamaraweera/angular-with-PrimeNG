@@ -26,7 +26,13 @@
 
   <div class="typing-section">
     <div class="typing-input">
-      <input type="text" pInputText placeholder="Message" />
+      <input
+        type="text"
+        pInputText
+        placeholder="Message"
+        [(ngModel)]="typingMessage"
+      />
+
       <p-splitButton
         icon="pi pi-paperclip"
         [model]="options1"
@@ -44,6 +50,7 @@
         type="button"
         icon="pi pi-send"
         class="p-button-text"
+        (click)="onClickSendBtn()"
       ></button>
     </div>
 

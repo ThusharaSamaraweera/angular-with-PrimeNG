@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import {  BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
-import { ScrollingModule } from '@angular/cdk/scrolling'
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
 import { CardModule } from 'primeng/card';
@@ -27,6 +27,7 @@ import { MessageTypingSectionComponent } from './message-typing-section/message-
 import { MessageListComponent } from './message-list/message-list.component';
 import { NgxsModule } from '@ngxs/store';
 import { environment } from 'src/environments/environment';
+import { MessageState } from './state/messages/messages-state';
 
 @NgModule({
   declarations: [
@@ -57,10 +58,10 @@ import { environment } from 'src/environments/environment';
     DividerModule,
     CardModule,
     SplitButtonModule,
-    
-    NgxsModule.forRoot([], {
-      developmentMode: !environment.production
-    })
+
+    NgxsModule.forRoot([MessageState], {
+      developmentMode: !environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

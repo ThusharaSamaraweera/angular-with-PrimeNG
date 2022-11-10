@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
-import {State} from '@ngxs/store'
+import {Action, State, StateContext} from '@ngxs/store'
+import { AddMessage } from "./message-actions";
 import { MessageModel } from "./MessageModel";
 
 export interface MessageStateModel{
@@ -14,5 +15,17 @@ export interface MessageStateModel{
 })
 @Injectable()
 export class MessageState {
-  addMessage(){}
+
+  @Action(AddMessage)
+  addMessage(ctx: StateContext<MessageStateModel>, actions: AddMessage) {
+    const { message } = actions;
+
+    if (!message) {
+      return
+    }
+
+    const state = ctx.getState()
+    ctx.setState({...state, messages: [...state.messages, message]})
+    console.log(ctx.getState())
+  }
 }
