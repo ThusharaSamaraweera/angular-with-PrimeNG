@@ -1,3 +1,12 @@
 <div class="message-list-section">
-
+  <div class="message-block">
+    <div class="messages" >
+      <div *ngFor="let message of messages" class="message">
+        {{message.content}}
+      </div>
+    </div>
+    <p-avatar shape="circle" size="medium" styleClass="avatar">{{
+      title
+    }}</p-avatar>
+  </div>
 </div>

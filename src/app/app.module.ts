@@ -25,6 +25,8 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { MessagePanelUpperSectionComponent } from './message-panel-upper-section/message-panel-upper-section.component';
 import { MessageTypingSectionComponent } from './message-typing-section/message-typing-section.component';
 import { MessageListComponent } from './message-list/message-list.component';
+import { NgxsModule } from '@ngxs/store';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,10 @@ import { MessageListComponent } from './message-list/message-list.component';
     DividerModule,
     CardModule,
     SplitButtonModule,
+    
+    NgxsModule.forRoot([], {
+      developmentMode: !environment.production
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
