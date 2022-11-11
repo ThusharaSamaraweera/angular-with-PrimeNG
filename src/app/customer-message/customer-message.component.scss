@@ -1,9 +1,9 @@
 $border-color: #e1e1e1;
 
 .customer-message {
-  padding: 5px;
+  padding: 15px 5px;
   display: flex;
-  height: 50px;
+  height: 70px;
   border-bottom: 1px $border-color solid;
 
   .customer-message-logo {
@@ -30,7 +30,7 @@ $border-color: #e1e1e1;
   }
 
   .content {
-    padding: 0px 10px;
+    padding: 0px 5px;
     display: flex;
     flex-direction: column;
 

@@ -13,20 +13,21 @@
 
     .messaging-section {
       background-color: rgb(238, 231, 231);
-        padding: 20px 0 0 20px;
-
-      ::ng-deep .messaging-card {
-      }
-
-      ::ng-deep .p-card {
-      }
+      padding: 20px 0 0 20px;
+      height: max-content;
 
       ::ng-deep .p-card-body {
         padding: 0;
       }
 
-      ::ng-deep .p-card-content{
+      ::ng-deep .p-card-content {
         padding: 10px 0 10px 10px;
+      }
+
+      ::np-deep .divider{
+        ::ng-deep .p-divider{
+          margin: 0;
+        }
       }
     }
   }
